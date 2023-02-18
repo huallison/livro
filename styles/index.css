@@ -1,0 +1,264 @@
+*{
+    box-sizing: content-box;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    overflow-x: hidden;
+    background-image: url("../img/baixados.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+}
+
+section{
+    background-image: linear-gradient(90deg, black, rgba(0, 0, 0, 0.54), black);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.tema, .livro{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+h1{
+    font-family: 'Epilogue', sans-serif;
+
+}
+
+
+.tema > h1{
+    font-size: 50pt;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+.tema > p{
+    width: 400px;
+    margin: 40px 0px 40px 0px;
+    color: rgb(187, 187, 187);
+}
+
+.tema > button{
+    width: 300px;
+    height: 40px;
+    color: white;
+    font-size:17px;
+    background-color: red;
+    border-radius: 15px;
+    border: 2px black solid;
+    font-weight: 700;
+
+}
+
+.tema > button:hover{
+    transition: all 0.9s;
+    color: red;
+    background-color: white;
+    cursor: pointer;
+}
+
+.pg2{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.pg2 > h1{
+    margin: 0px 0px 70px 0px;
+    font-size: 50pt;
+    color: white;
+}
+
+.icones{
+    width: 80%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.icones > .icon > img{
+    width: 150px;
+    background-color: rgba(128, 128, 128, 0.678);
+    padding: 20px;
+    border-radius: 80px;
+}
+
+.icones > .icon > p{
+    color: white;
+    text-align: center;
+    font-size: 20pt;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.pg3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.autor{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+}
+
+.pg3 > h1{
+    margin-top: 80px;
+    font-size: 50pt;
+}
+
+.autor > .info,
+.autor > .img{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.autor > .info > h1{
+    font-size: 40pt;
+    color: rgba(255, 255, 255, 0.779);
+}
+
+.autor > .info > .redes > a > img{
+    width: 40px;
+    margin: 20px 10px 0px 10px;
+}
+
+.autor > .img > img{
+    width: 600px;
+}
+
+.autor > .img::after{
+    content: "";
+    position: relative;
+    width: 620px;
+    height: 3px;
+    background-color: white;
+    bottom: 0;
+}
+
+@media screen and (max-width:600px){
+    section{
+        min-height: 100vh;
+    }
+
+    .pg1{
+        min-height: 110vh;
+        flex-direction: column-reverse;
+    }
+    
+    .tema, .livro{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .tema > h1{
+        font-size: 30pt;
+    }
+    
+    .tema > p{
+        width: 90%;
+        text-align: center;
+    }
+
+    .pg2{
+        min-height: 150vh;
+        flex-direction: column;
+    }
+    
+    .pg2 > h1{
+        margin: 30px 0px 0px 0px;
+        font-size: 50pt;
+        color: white;
+    }
+    
+    .icones{
+        width: 80%;
+        margin-top: 100px;
+        min-height: 100vh;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .icones > .icon > img{
+        padding: 10px;
+    }
+    .icon{
+        margin: 10px 0px 10px 0px;
+    }
+    
+    .autor{
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .pg3{
+        padding-top: 30px;
+    }
+
+    .pg3 > h1{
+        margin-top: 80px;
+        font-size: 50pt;
+    }
+    
+    .autor > .info,
+    .autor > .img{
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .autor > .info > h1{
+        font-size: 40pt;
+        color: rgba(255, 255, 255, 0.779);
+    }
+    
+    .autor > .info > .redes > a > img{
+        width: 40px;
+        margin: 20px 10px 0px 10px;
+    }
+    
+    .autor > .img > img{
+        width: 300px;
+    }
+    
+    .autor > .img::after{
+        content: "";
+        position: relative;
+        width: 310px;
+        height: 3px;
+        background-color: white;
+        bottom: 0;
+    }
+}
+
+
